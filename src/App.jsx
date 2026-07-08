@@ -1,6 +1,6 @@
 import { Header } from "./Layout/Header/header";
 import { HomePage } from "./HomePage/homePage";
-import { BannerSlider } from "./components/banner";
+import { Banner } from "./components/banner";
 function App() {
   return (
     <div>
