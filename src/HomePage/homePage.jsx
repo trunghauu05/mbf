@@ -17,16 +17,7 @@ export function HomePage() {
     width: "100%",
   };
   return (
-    <div
-      style={{
-        backgroundImage: "url('/stock.jpg')",
-        minHeight: "100vh",
-        width: "100%",
-        maxWidth: "2000px",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="background">
       <Banner></Banner>
       <div
         style={{

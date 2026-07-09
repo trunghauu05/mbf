@@ -4,3 +4,11 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+.background {
+  background-image: url("/stock.jpg");
+  min-height: 100vh;
+  width: 100%;
+  max-width: 2000px;
+  background-size: cover;
+  background-position: center;
+}

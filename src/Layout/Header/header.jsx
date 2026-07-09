@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 export function Header() {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/login");
+  };
   return (
     <div
       style={{
@@ -35,7 +41,18 @@ export function Header() {
         </div>
       </div>
       <div>
-      <button style={{padding:'15px', borderRadius:'15px', background:'linear-gradient(45deg, #c55757, #261870, #692352', color:'white', fontWeight:'bold'}}>DANG NHAP</button>
+        <button
+          onClick={handleLogin}
+          style={{
+            padding: "15px",
+            borderRadius: "15px",
+            background: "linear-gradient(45deg, #c55757, #261870, #692352",
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          DANG NHAP
+        </button>
       </div>
     </div>
   );
