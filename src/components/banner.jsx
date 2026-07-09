@@ -2,53 +2,56 @@ import { Carousel } from "antd";
 
 export function Banner() {
   return (
-    
-    <Carousel
-      arrows={true}
-      infinite={true}
-      autoplay={true}
-      autoplaySpeed={4000}
-      speed={1000}
-      slidesToShow={2}
-      slidesToScroll={1}
-    >
-      <div>
-        <div
-          style={{
-            height: "200px",
-            // backgroundColor: "#364d79",
-            color: "#fff",
-            textAlign: "center",
-            justifyItems: "center",
-          }}
-        >
-          <img src="/3.jpg"></img>
+    <div style={{ padding: "0 100px 0 100px" }}>
+      <Carousel
+        arrows={true}
+        infinite={true}
+        autoplay={true}
+        autoplaySpeed={4000}
+        speed={1000}
+        slidesToShow={2}
+        slidesToScroll={1}
+      >
+        <div>
+          <div style={{ height: "300px", padding: "0 10px" }}>
+            <img
+              src="/mine.jpg"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
         </div>
-      </div>
-      <div>
-        <div
-          style={{
-            height: "200px",
-            // backgroundColor: "#364d79",
-            color: "#fff",
-            textAlign: "center",
-          }}
-        >
-          Slide 2
+        <div>
+          <div style={{ height: "300px", padding: "0 10px" }}>
+            <img
+              src="/batman.png"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
         </div>
-      </div>
-      <div>
-        <div
-          style={{
-            height: "200px",
-            // backgroundColor: "#364d79",
-            color: "#fff",
-            textAlign: "center",
-          }}
-        >
-          Slide 3
+        <div>
+          <div style={{ height: "300px", padding: "0 10px" }}>
+            <img
+              src="/sonic.png"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
         </div>
-      </div>
-    </Carousel>
+      </Carousel>
+    </div>
   );
 }
